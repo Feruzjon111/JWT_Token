@@ -57,4 +57,4 @@ class LogoutView(APIView):
         except Exception:
             return Response({
                 "msg": "Token noto'g'ri!"
-            })
+            }, status=400)
